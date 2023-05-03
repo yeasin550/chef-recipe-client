@@ -10,7 +10,7 @@ const RecipeDetails = () => {
 
     return (
       <div className="mt-5 mx-12">
-        {/* <h1>Recipe container</h1> */}
+        
         <div>
           <div className="card lg:card-side bg-base-100 mx-12">
             <figure>
