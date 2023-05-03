@@ -136,7 +136,7 @@ const Login = () => {
           <p className='mt-3'>
             Create a new account ?
             <Link className="text-primary" to="/register">
-              Register
+              Register 
             </Link>
           </p>
           <p className="text-red-700">{error}</p>
