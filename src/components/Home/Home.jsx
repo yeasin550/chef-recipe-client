@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Chef from '../Chef/Chef';
+import MyRecipe from '../MyRecipe/MyRecipe';
 const Home = () => {
   const [chefs, setChefs] = useState([])
   useEffect(() => {
@@ -28,16 +29,17 @@ const Home = () => {
                 sub-recipe or subrecipe is a recipe for an ingredient that will
                 be called for in the instructions for the main recipe.
               </p>
-              {/* <button className="btn btn-primary">Get Started</button> */}
+              
             </div>
           </div>
         </div>
-        <h1 className="mb-8">This is chef container</h1>
+        {/* <h1 className="mb-8">This is chef container</h1> */}
         <div className="grid lg:grid-cols-3 lg:ms-12 gap-3">
           {chefs.map((chef) => (
             <Chef key={chef.id} chef={chef}></Chef>
           ))}
         </div>
+        <MyRecipe></MyRecipe>
       </div>
     );
 };

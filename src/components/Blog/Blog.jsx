@@ -59,6 +59,8 @@ const Blog = () => {
           </p>
         </div>
       </div>
+     
+      
     </div>
   );
 };

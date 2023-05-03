@@ -11,7 +11,7 @@ const Header = () => {
     .catch(error => console.log(error))
   }
   return (
-    <nav className="bg-gray-200 ps sticky top-0 left-0">
+    <nav className="bg-gray-200 ps ">
       <div className="md:mx-20 lg:mx-36">
         <div style={{ height: "60px" }} className="navbar ">
           <div className="navbar-start">

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Chef = ({ chef }) => {
-    console.log(chef)
+    // console.log(chef)
     const { chefName, chefPicture, experience, likes, numRecipes, id } = chef;
     return (
       <div>
