@@ -25,7 +25,7 @@ const Blog = () => {
               components. ?
             </b>
             —/-== React, components can be classified into two types: controlled
-            and uncontrolled components. The main difference between the two is
+            and uncontrolled components. The main difference between the two is   on the 
             how they handle state and user input. An uncontrolled component does
             not manage its own state. Instead, it relies on the DOM to store and
             manage its state.
