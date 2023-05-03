@@ -117,22 +117,7 @@ const Login = () => {
               <span class="text-white font-medium">GitHub Sign in</span>
             </button>
           </div>
-          {/* <div className=" social-button-container flex gap-2 w-50 mt-3">
-            <div onClick={handleGoogleSignIn} className="">
-              <img
-                className=" social-button"
-                src="https://i.ibb.co/gSTHXZJ/google-btn.png"
-                alt=""
-              />
-            </div>
-            <div onClick={handleGithubSingIn} className="">
-              <img
-                className=" social-button"
-                src="https://i.ibb.co/g9f4P0S/github-btn.png"
-                alt=""
-              />
-            </div>
-          </div> */}
+          
           <p className='mt-3'>
             Create a new account ?
             <Link className="text-primary" to="/register">
