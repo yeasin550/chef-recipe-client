@@ -4,7 +4,7 @@ import SingleCard from '../SingleCard/SingleCard';
 
 const RecipeDetails = () => {
     const singleChef  = useLoaderData();
-    console.log(singleChef);
+    console.log(singleChef)
     const { chefName, chefPicture, experience, likes, numRecipes, id } =
       singleChef;
 
