@@ -19,7 +19,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        // loader: () => fetch("http://localhost:5000/recipe"),
+        
       },
       {
         path: "/login",

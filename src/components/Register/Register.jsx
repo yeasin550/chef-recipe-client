@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 const Register = () => {
   const [error, setError] = useState('')
   const [success, setSuccess] = useState('')
-  const { createUser, googleSingIn, githubSignIn, updateProfile } =
+  const {user, createUser, googleSingIn, githubSignIn, updateProfileLogin } =
     useContext(AuthContext);
-  
+ console.log(updateProfileLogin)
     const handleRegister = event => {
         event.preventDefault();
         const form = event.target;
@@ -15,7 +15,7 @@ const Register = () => {
         const photo = form.photo.value;
         const email = form.email.value;
         const password = form.password.value;
-      console.log(name, photo, email, password);
+      // console.log(name, photo, email, password);
       
       if (!/(?=.*[A-Z])/.test(password)) {
         setError("Please provide one uppercase letter");
@@ -25,13 +25,18 @@ const Register = () => {
         setError("Password should be at least 6 characters");
         return;
       }
+      setError("");
         createUser(email, password)
           .then((result) => {
             const loggedUser = result.user;
             console.log(loggedUser);
-            setError("");
             setSuccess("Registration successful");
-            form.reset("");
+            // form.reset("");
+            updateProfileLogin(name, photo)
+              .then(result => {
+              console.log(result)
+              })
+            .catch(error => console.log(error))
           })
           .catch((error) => {
             console.log(error);

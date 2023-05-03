@@ -1,5 +1,6 @@
 import React from 'react';
 // import { FaStar, FaRegStarHalf, FaRegStar } from "react-icons/fa";
+
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
 const SingleCard = ({ singleRecipe }) => {

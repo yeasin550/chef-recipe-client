@@ -1,36 +1,34 @@
-import React from 'react';
-import { Link, useRouteError } from 'react-router-dom'
-import errroPhot from '../../../public/89191-error-404'
-const ErrorePage = () => {
-    const { error, status } = useRouteError()
-    return (
-      <section className="flex items-center min-h-screen p-16 dark:bg-gray-900 dark:text-gray-100">
+import React from "react";
+import { Link, useRouteError } from "react-router-dom";
+const ErrorPage = () => {
+  const { error, status } = useRouteError();
+  return (
+    <>
+      <section className="flex items-center h-screen p-16 bg-gray-100 text-gray-900">
         <div className="container flex flex-col items-center justify-center px-5 mx-auto my-8">
+          <div className="">
+            <img
+              src="https://internetdevels.com/sites/default/files/public/blog_preview/404_page_cover.jpg"
+              alt=""
+              className="rounded-full"
+            />
+          </div>
+
           <div className="max-w-md text-center">
-            <h2 className="mb-8 font-extrabold text-3xl dark:text-gray-600">
-              <span className="sr-only text-green-600">ErroR</span>!!!404!!!!😢
-              <br />
-              <i className="text-red-600">
-                {error.statusText || error.message}
-              </i>
+            <h2 className="mb-8 font-extrabold text-9xl text-gray-600">
+              <span className="sr-only">Error</span> {status || 404}
             </h2>
-            <img src={errroPhot} alt="Error Picture" />
-            <p className="text-4xl font-semibold md:text-3xl">Oopsssss!</p>
-            <p className="mt-4 mb-8 dark:text-gray-400">
-              Sorry, an unexpected error has occurred.
+            <p className="text-2xl font-semibold md:text-3xl mb-8">
+              {error?.message}
             </p>
-            <button>
-              <Link
-                to="/"
-                className="px-8 py-3 ml-10 font-semibold rounded bg-cyan-200 text-gray-900"
-              >
-                Back to homepage
-              </Link>
-            </button>
+            <Link to="/" className="bg-emerald-500 px-3 py-2 rounded-lg">
+              Back to home
+            </Link>
           </div>
         </div>
       </section>
-    );
+    </>
+  );
 };
 
-export default ErrorePage;
+export default ErrorPage;
