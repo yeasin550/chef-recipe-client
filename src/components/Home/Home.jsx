@@ -4,7 +4,7 @@ import MyRecipe from '../MyRecipe/MyRecipe';
 const Home = () => {
   const [chefs, setChefs] = useState([])
   useEffect(() => {
-    fetch("http://localhost:5000/recipe")
+    fetch("https://chef-recipe-server-livid.vercel.app/recipe")
     .then(res => res.json())
       .then(data => {
         setChefs(data);

@@ -5,7 +5,7 @@ const MyRecipe = () => {
   const [myRecipe, setMyRecipe] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/myRecipe")
+    fetch("https://chef-recipe-server-livid.vercel.app/myRecipe")
       .then((res) => res.json())
       .then((data) => {
         setMyRecipe(data);

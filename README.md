@@ -8,5 +8,5 @@
 
 ## Live Link
 
-[Link](https://choosealicense.com/licenses/mit/) : http://localhost:5000/recipe
+[Link](https://choosealicense.com/licenses/mit/) : https://chef-recipe-server-livid.vercel.app/recipe
 

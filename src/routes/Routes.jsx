@@ -41,7 +41,7 @@ const router = createBrowserRouter([
           </PrivetRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/recipe/${params.id}`),
+          fetch(`https://chef-recipe-server-livid.vercel.app/recipe/${params.id}`),
       },
       
     ],

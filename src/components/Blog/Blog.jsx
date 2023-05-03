@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useRef } from "react";
+// import ReactToPrint from "react-to-print";
+import ReactPrint from "react-to-print";
 
 const Blog = () => {
+  const print = useRef();
   return (
     <div className="mt-4 mx-12">
       <div className="py-4 border-b">
         <h2 className="text-xl font-semibold">Questions</h2>
       </div>
       {/* all questions will be here  */}
-      <div className="py-4">
+      <div>
+        <ReactPrint trigger={() => <button className="text-3xl font-bold text-red-700 underline">Print</button>} content={()=> print.current} >
+          
+        </ReactPrint>
+        <div ref={print}>
+          <div className="py-4">
+            
         <div>
           <h4 className="text-lg font-medium">Question 01</h4>
           <p className="py-4 text-base text-gray-700">
@@ -58,6 +67,9 @@ const Blog = () => {
             and easier to read.
           </p>
         </div>
+        </div>
+         </div>
+        
       </div>
      
       
