@@ -12,5 +12,5 @@
 
 ## Live Link
 
-[Link](https://choosealicense.com/licenses/mit/) : https://chef-recipe-server-livid.vercel.app/recipe
+[Link](https://chef-recipe-9485d.web.app/) : https://chef-recipe-9485d.web.app/
 
