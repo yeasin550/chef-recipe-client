@@ -25,7 +25,7 @@
     "react-to-pdf": "^0.0.14",
     "react-to-print": "^2.14.12",
     "sort-by": "^1.2.0",
-    "sweetalert2": "^11.7.3"
+    "sweetalert2": "^11.7.4"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

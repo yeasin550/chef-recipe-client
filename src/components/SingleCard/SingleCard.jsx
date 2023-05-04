@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
-// import { FaStar, FaRegStarHalf, FaRegStar } from "react-icons/fa";
-import ale from "sweetalert2/dist/sweetalert2.js";
+import alert from "sweetalert2/dist/sweetalert2.js";
+ import Swal from "sweetalert2/dist/sweetalert2.js";
+ import "sweetalert2";
 import LazyLoad from 'react-lazy-load';
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
 const SingleCard = ({ singleRecipe }) => {
   const [isDisabled, setIsDisabled] = useState(false);
-    console.log(singleRecipe)
+    // console.log(singleRecipe)
     const { cookingMethod, img, ingredients, ratings, recipeName } =
       singleRecipe;
 
   function handleClick() {
     setIsDisabled(true);
-    ale.fire({
+    alert.fire({
       title: "success!",
       text: "Your Favorite Food add",
       icon: "success",
@@ -21,7 +22,7 @@ const SingleCard = ({ singleRecipe }) => {
   }
     return (
       <div className="mt-12 ">
-        <div className="card flex  glass ">
+        <div className="card flex h-full glass ">
           <figure>
             <LazyLoad className="w-full" effect="blur">
               <img src={img} />

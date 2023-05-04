@@ -25,7 +25,7 @@ const RecipeDetails = () => {
           </div>
         </div>
         {/* singleRecipe */}
-        <div className=" lg:w-3/4 grid gap-3 mx-4  pt-12 lg:mx-auto lg:grid-cols-3">
+        <div className=" lg:w-3/4 grid gap-3 mx-4 pt-12 lg:mx-auto lg:grid-cols-3">
           {singleChef.recipes.map((singleRecipe) => (
             <SingleCard
               key={singleRecipe.id}

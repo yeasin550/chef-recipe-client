@@ -23,14 +23,15 @@ const Home = () => {
           <div className="hero-overlay bg-opacity-10"></div>
           <div className="hero-content text-center text-neutral-content">
             <div className="max-w-md lg:text-start lg:mr-96">
-              <h1 className="mb-5 text-5xl font-bold">Interesting Recipe</h1>
+              <h1 className="mb-5 text-5xl  animate-text bg-gradient-to-r from-orange-500 via-purple-500 to-teal-500 bg-clip-text text-transparent font-black">
+                Interesting Recipe
+              </h1>
               <p className="mb-5">
                 A recipe is a set of instructions that describes how to prepare
                 or make something, especially a dish of prepared food. A
                 sub-recipe or subrecipe is a recipe for an ingredient that will
                 be called for in the instructions for the main recipe.
               </p>
-              
             </div>
           </div>
         </div>

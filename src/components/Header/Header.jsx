@@ -83,7 +83,7 @@ const Header = () => {
               to="/"
               className=" animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-2xl font-black"
             >
-              Chef-Recipe
+              Recipe
             </Link>
           </div>
           <div className="navbar-center hidden lg:flex">
