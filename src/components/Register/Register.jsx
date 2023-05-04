@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 const Register = () => {
   const [error, setError] = useState('')
   const [success, setSuccess] = useState('')
-  const {user, createUser, googleSingIn, githubSignIn, updateProfileLogin } =
+  const { createUser, googleSingIn, githubSignIn, updateProfileLogin } =
     useContext(AuthContext);
- console.log(updateProfileLogin)
+//  console.log(updateProfileLogin)
     const handleRegister = event => {
         event.preventDefault();
         const form = event.target;
@@ -25,24 +25,32 @@ const Register = () => {
         setError("Password should be at least 6 characters");
         return;
       }
-      setError("");
-        createUser(email, password)
+      setError("")
+      createUser(email, password)
           .then((result) => {
             const loggedUser = result.user;
             console.log(loggedUser);
             setSuccess("Registration successful");
-            // form.reset("");
-            updateProfileLogin(name, photo)
-              .then(result => {
-              console.log(result)
-              })
-            .catch(error => console.log(error))
+            form.reset("");
+            handleProfile(name, photo)
           })
           .catch((error) => {
             console.log(error);
           });
     }
-
+    const handleProfile = (name, photoURL) => {
+    const profile = {
+      displayName: name,
+      photoURL: photoURL
+    }
+    updateProfileLogin(profile)
+      .then(() => {
+      })
+      .catch(error => {
+        setError(error.message);
+      })
+  }
+  
   const handleGoogleSignIn = () => {
     googleSingIn()
       .then(result => {
@@ -63,6 +71,7 @@ const Register = () => {
       console.log(error)
     })
   }
+
     return (
       <div>
         <form

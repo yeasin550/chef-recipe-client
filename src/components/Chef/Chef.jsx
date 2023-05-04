@@ -8,10 +8,9 @@ const Chef = ({ chef }) => {
       <div>
         <div className=" card-compact mb-5 lg:w-96 sm:w-80 bg-dark  border-2">
           <figure>
-            <LazyLoad effect="blur">
+            <LazyLoad effect='blur'>
               <img className="h-72" src={chefPicture} alt="chef" />
             </LazyLoad>
-            
           </figure>
           <div className="card-body">
             <h2 className="card-title">{chefName}</h2>

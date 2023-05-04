@@ -24,7 +24,8 @@
     "react-star-ratings": "^2.3.0",
     "react-to-pdf": "^0.0.14",
     "react-to-print": "^2.14.12",
-    "sort-by": "^1.2.0"
+    "sort-by": "^1.2.0",
+    "sweetalert2": "^11.7.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

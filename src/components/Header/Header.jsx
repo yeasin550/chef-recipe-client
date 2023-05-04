@@ -5,7 +5,7 @@ import { AuthContext } from "../../providers/AuthProviders";
 // bg-slate-100
 const Header = () => {
   const { user, logOut } = useContext(AuthContext);
-  console.log(user)
+  // console.log(user)
   const handleLogOut = () => {
     logOut()
     .then(result => {})
@@ -135,7 +135,8 @@ const Header = () => {
             <div className="avatar placeholder mt-3 mr-2">
               {user && (
                 <div className="bg-neutral-focus text-neutral-content rounded-full w-12">
-                  <img src={user?.email} />
+
+                  <img className="cursor-pointer" title={user.displayName} src={user?.photoURL} />
                 </div>
               )}
             </div>

@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-// import ReactToPrint from "react-to-print";
 import ReactPrint from "react-to-print";
 
 const Blog = () => {
@@ -15,7 +14,8 @@ const Blog = () => {
           
         </ReactPrint>
         <div ref={print}>
-          <div className="py-4">
+
+        <div className="py-4">
             
         <div>
           <h4 className="text-lg font-medium">Question 01</h4>
@@ -67,7 +67,9 @@ const Blog = () => {
             and easier to read.
           </p>
         </div>
+            
         </div>
+          
          </div>
         
       </div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Chef from '../Chef/Chef';
 import MyRecipe from '../MyRecipe/MyRecipe';
+import Page from '../Page/Page';
 const Home = () => {
   const [chefs, setChefs] = useState([])
   useEffect(() => {
@@ -40,6 +41,7 @@ const Home = () => {
           ))}
         </div>
         <MyRecipe></MyRecipe>
+        <Page></Page>
       </div>
     );
 };
