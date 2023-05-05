@@ -23,8 +23,9 @@ const MyRecipe = () => {
         <div className="hero-overlay bg-opacity-10"></div>
 
         <div>
-          <h1 className="my-5 text-5xl  animate-text bg-gradient-to-r from-red-500 via-purple-500 to-teal-500 bg-clip-text text-transparent font-black text-center">
-            Our Recipe Menu
+          <h1 className="my-5 text-5xl font-bold text-white text-center">
+            Our Recipe Menu 
+            
           </h1>
           <div className="grid lg:grid-cols-3 sm:grid-cols-1 gap-6">
             {myRecipe.map((r) => (
