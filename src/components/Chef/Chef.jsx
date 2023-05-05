@@ -6,7 +6,7 @@ const Chef = ({ chef }) => {
     const { chefName, chefPicture, experience, likes, numRecipes, id } = chef;
     return (
       <div>
-        <div className=" card-compact mb-5 lg:w-96 sm:w-80 bg-dark  border-2">
+        <div className=" card-compact hover:bg-gray-100 mb-5 lg:w-96 sm:w-80 bg-dark  border-2">
           <figure>
             <LazyLoad effect='blur'>
               <img className="h-72" src={chefPicture} alt="chef" />

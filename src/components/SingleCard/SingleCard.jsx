@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import alert from "sweetalert2/dist/sweetalert2.js";
- import Swal from "sweetalert2/dist/sweetalert2.js";
+//  import Swal from "sweetalert2/dist/sweetalert2.js";
  import "sweetalert2";
 import LazyLoad from 'react-lazy-load';
 import { Rating } from "@smastrom/react-rating";
@@ -28,7 +28,7 @@ const SingleCard = ({ singleRecipe }) => {
               <img src={img} />
             </LazyLoad>
           </figure>
-          <div className="card-body bg-gray-300 py-2">
+          <div className="card-body bg-gray-100 hover:bg-slate-200 py-2">
             <h2 className="card-title">{recipeName}</h2>
             <ol className="list-decimal grid grid-cols-2">
               {ingredients.map((data, i) => (
@@ -47,8 +47,8 @@ const SingleCard = ({ singleRecipe }) => {
             disabled={isDisabled}
             className={
               isDisabled
-                ? "disabled:opacity-50 bg-amber-600 py-1  hover:bg-amber-800 rounded-lg px-4"
-                : "bg-amber-600 py-1  hover:bg-amber-800 rounded-lg px-4"
+                ? "disabled:opacity-50 bg-green-600 py-1 text-white hover:bg-green-800 rounded-lg px-4"
+                : "bg-orange-600 py-1  hover:bg-orange-800 text-white  px-4"
             }
           >
             favorite

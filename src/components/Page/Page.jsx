@@ -8,8 +8,8 @@ const Page = () => {
       
      
     >
-      <div className="mx-12 mt-5 flex gap-6">
-        <img className="w-[500px] rounded-md  h-80" src={logo} alt="" />
+      <div className="mx-12 mt-5 lg:flex gap-6">
+        <img className="w-[500px] rounded-md lg:h-80 " src={logo} alt="" />
         <div className="flex items-center text-xl">
           <div>
             <h1 className="text-3xl text-purple-500 font-semibold text-center mb-3 ">

@@ -16,7 +16,7 @@ const RecipeDetails = () => {
             <figure>
               <img className="h-80" src={chefPicture} alt="Album" />
             </figure>
-            <div className="card-body">
+            <div className="card-body bg-slate-200">
               <h2 className="card-title text-2xl">{chefName}</h2>
               <p className="text-xl">Years of experience : {experience}</p>
               <p className="text-xl">Numbers of recipes : {numRecipes}</p>

@@ -13,37 +13,27 @@ const MyRecipe = () => {
       });
   }, []);
   return (
-    <div
-      className="hero min-h-screen"
-      style={{
-        backgroundImage: `url("https://img.freepik.com/free-photo/healthy-lunch-go-packed-lunch-box_1220-4541.jpg?w=740&t=st=1683100425~exp=1683101025~hmac=4afac2cf1447087f216ca185b3ee8f3903d4b70f954cdb999e622c094b0245ae")`,
-      }}
-    >
-      <div className="hero-overlay bg-opacity-10"></div>
-      <div className="grid lg:grid-cols-3 sm:grid-cols-1 gap-6">
-        {myRecipe.map((r) => (
-          <RecipeCart key={r.id} r={r}></RecipeCart>
-        ))}
-      </div>
+    <div>
+      <div
+        className="hero min-h-screen"
+        style={{
+          backgroundImage: `url("https://img.freepik.com/free-photo/top-view-different-seasonings-with-fresh-tomatoes-dark-green-background-ingredient-product-meal-food-vegetable_140725-72482.jpg?w=740&t=st=1683263221~exp=1683263821~hmac=a701ae7335f40a03dfbbf9d88dc0c2e7f5134a2429f05c60743d28fbebdbfaaa")`,
+        }}
+      >
+        <div className="hero-overlay bg-opacity-10"></div>
 
-      {/* <div className="hero-content text-center text-neutral-content">
-          <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-            <p className="mb-5">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
-            </p>
-            <button className="btn btn-primary">Get Started</button>
+        <div>
+          <h1 className="my-5 text-5xl  animate-text bg-gradient-to-r from-red-500 via-purple-500 to-teal-500 bg-clip-text text-transparent font-black text-center">
+            Our Recipe Menu
+          </h1>
+          <div className="grid lg:grid-cols-3 sm:grid-cols-1 gap-6">
+            {myRecipe.map((r) => (
+              <RecipeCart key={r.id} r={r}></RecipeCart>
+            ))}
           </div>
-        </div> */}
+        </div>
+      </div>
     </div>
-
-    //   <div>
-    //     <h1 className="text-center text-4xl animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black">
-    //       Our Menu
-    //     </h1>
-    //   </div>
   );
 };
 

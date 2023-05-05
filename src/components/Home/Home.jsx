@@ -17,7 +17,7 @@ const Home = () => {
         <div
           className="hero min-h-screen"
           style={{
-            backgroundImage: `url("https://img.freepik.com/free-photo/crop-plate-with-salad_23-2147753678.jpg?w=826&t=st=1683009705~exp=1683010305~hmac=4a6c89fb4d2031f3337a993526f0047efe743db6f95714a87812b7e8fff7cf1a")`,
+            backgroundImage: `url("https://img.freepik.com/free-photo/friied-eggs-with-vegetables_2829-10927.jpg?w=826&t=st=1683260023~exp=1683260623~hmac=c0beaac385c8cad2ff5e5a311522e92e1b16159050dd0217c06eefc4b9ec66d6")`,
           }}
         >
           <div className="hero-overlay bg-opacity-10"></div>
@@ -32,6 +32,9 @@ const Home = () => {
                 sub-recipe or subrecipe is a recipe for an ingredient that will
                 be called for in the instructions for the main recipe.
               </p>
+              <button className="relative flex items-center justify-center w-48 mr-4 gap-2 py-2 px-4  bg-gradient-to-r from-orange-500 to-indigo-500 text-white rounded-lg shadow-md transition-all hover:shadow-lg hover:bg-gradient-to-r hover:from-pink-500 hover:to-red-500">
+                Get Start
+              </button>
             </div>
           </div>
         </div>
