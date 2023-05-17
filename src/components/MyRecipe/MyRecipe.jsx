@@ -27,7 +27,7 @@ const MyRecipe = () => {
             Our Recipe Menu 
             
           </h1>
-          <div className="grid lg:grid-cols-3 sm:grid-cols-1 gap-6">
+          <div className="grid lg:grid-cols-3 sm:grid-cols-1 gap-6 ">
             {myRecipe.map((r) => (
               <RecipeCart key={r.id} r={r}></RecipeCart>
             ))}

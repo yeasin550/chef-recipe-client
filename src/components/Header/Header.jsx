@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProviders";
-// import './Header.css'
-// bg-slate-100
+import recipe from '../../assets/recipe-logo.png'
 const Header = () => {
   const { user, logOut } = useContext(AuthContext);
   // console.log(user)
@@ -12,7 +11,7 @@ const Header = () => {
     .catch(error => console.log(error))
   }
   return (
-    <nav className="bg-gray-200 ps ">
+    <nav className="bg-gray-100  font-bold">
       <div className="md:mx-20 lg:mx-36">
         <div style={{ height: "60px" }} className="navbar ">
           <div className="navbar-start">
@@ -54,7 +53,7 @@ const Header = () => {
                       isActive ? "text-blue-600" : "default"
                     }
                   >
-                    Blog
+                    Blogs
                   </NavLink>
                 </li>
                 <li>
@@ -83,7 +82,7 @@ const Header = () => {
               to="/"
               className=" animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-2xl font-black"
             >
-              Recipe
+              <img className="w-40 h-24" src={recipe} alt="" />
             </Link>
           </div>
           <div className="navbar-center hidden lg:flex">
@@ -135,20 +134,24 @@ const Header = () => {
             <div className="avatar placeholder mt-3 mr-2">
               {user && (
                 <div className="bg-neutral-focus text-neutral-content rounded-full w-12">
-
-                  <img className="cursor-pointer" title={user.displayName} src={user?.photoURL} />
+                  <img
+                    className="cursor-pointer"
+                    title={user.displayName}
+                    src={user?.photoURL}
+                  />
                 </div>
               )}
             </div>
             {user ? (
-             
-                <button onClick={handleLogOut}  className=" mt-6 text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-md text-sm px-5 py-2.5 text-center mr-2 mb-2">
+              <button
+                onClick={handleLogOut}
+                className=" mt-3 relative flex items-center justify-center  mr-4 gap-2 px-5 py-2.5  bg-gradient-to-r from-orange-500 to-indigo-500 text-white rounded-lg shadow-md transition-all hover:shadow-lg hover:bg-gradient-to-r hover:from-pink-500 hover:to-red-500"
+              >
                 LogOut
               </button>
-              
             ) : (
-              <Link to='/login'>
-                <button className=" mt-6 text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-md text-sm px-5 py-2.5 text-center mr-2 mb-2">
+              <Link to="/login">
+                <button className=" mt-3 relative flex items-center justify-center  mr-4 gap-2 px-5 py-2.5  bg-gradient-to-r from-green-500 to-indigo-500 text-white rounded-lg shadow-md transition-all hover:shadow-lg hover:bg-gradient-to-r hover:from-pink-500 hover:to-red-500">
                   Login
                 </button>
               </Link>
